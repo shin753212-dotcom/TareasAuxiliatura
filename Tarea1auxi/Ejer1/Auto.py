@@ -1,8 +1,8 @@
 class Auto:
-    def __init__(self, marca, modelo, fecha, kilometraje, color):
+    def __init__(self, marca, modelo, anio, kilometraje, color):
         self.marca = marca
         self.modelo = modelo
-        self.fecha = fecha
+        self.anio = anio
         self.kilometraje = kilometraje
         self.color = color
     def mostrar_kilometraje(self):
@@ -14,4 +14,4 @@ class Auto:
         self.color = nuevo_color
         print("Color cambiado a:", self.color)
     def __str__(self):
-        return self.marca + " " + self.modelo + " (" + str(self.fecha) + ") - Color: " + self.color + " - Km: " + str(self.kilometraje)
+        return self.marca + " " + self.modelo + " (" + str(self.anio) + ") - Color: " + self.color + " - Km: " + str(self.kilometraje)
