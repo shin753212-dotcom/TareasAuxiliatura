@@ -1,0 +1,16 @@
+from CuentaBancaria import CuentaBancaria
+cuenta = CuentaBancaria("Lila Perez", "123456789", 1000)
+
+print("Datos iniciales:")
+cuenta.mostrar()
+
+print("Depositos:")
+cuenta.depositar(500)
+cuenta.depositar(-100)
+
+print("Retiros:")
+cuenta.retirar(200)
+cuenta.retirar(2000)
+
+print("Datos finales:")
+cuenta.mostrar()
